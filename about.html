@@ -4,14 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - BuddyTrail</title>
-    <link rel="stylesheet" href="assets/css/about.css" />
+    <title>BuddyTrail Blog - Discover Your Next Adventure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/RatingStyle.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     
     <link rel="icon" href="/icons/airplane.svg" />
-    <link rel="icon" href="https://img.icons8.com/?size=100&id=11808&format=png&color=000000">
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/icons/airplane.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/chatbot.css" />
 <style>
           /* circle styles */
           .circle {
@@ -33,10 +58,9 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-wrapper">
-            <img src="img/logo.png" alt="Travel Website Logo" id="logo">
+            <img src="img/Loading.png" alt="Travel Website Logo" id="logo">
             <div class="loader-globe"></div>
         </div>
-        <div id="loading-text">Ready to Explore the World...</div>
     </div>
     <style>
 
@@ -79,8 +103,8 @@
         /* Wrapper for the logo and loader */
         .loader-wrapper {
             position: relative;
-            width: 180px;
-            height: 180px;
+            width: 120px;
+            height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -90,16 +114,24 @@
         
 
         /* Circular Loader surrounding the logo */
-        .loader-globe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 8px solid transparent;
-            border-left-color: white;
-            border-right-color: white;
-            animation: spin 2s linear infinite;
-        }
+        #logo {
+        width: 170px;
+        position: relative;
+        z-index: 10; /* Ensures logo stays above the loader */
+        animation: pulse 2s infinite ease-in-out;
+      }
+
+      /* Circular Loader surrounding the logo */
+      .loader-globe {
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        border-left-color: white;
+        border-right-color: white;
+        animation: spin 2s linear infinite;
+      }
 
         /* Loading Text */
         #loading-text {
@@ -175,7 +207,7 @@
   <nav >
     <div class="logo">
       <img src="img/logo.png" id="logo-web">
-      <h1 id="logo"><a href="index.html">BuddyTrail</a></h1>
+      <h1 id="logo"><a href="index.html">Voyager</a></h1>
     </div>
 
     <!-- Hamburger button for mobile -->
@@ -195,11 +227,9 @@
       <!-- Close button for dropdown -->
       <span class="dropdown-close-btn" id="closeBtn">×</span>
       <li><a href="index.html" class="navhover">Home</a></li>
-      <li><a href="team.html" class="navhover">Team</a></li>
       <li><a href="index.html#deals" class="navhover">Exclusive Deals</a></li>
       <li><a href="blog.html" class="navhover">Blogs</a></li>
       <li><a href="about.html" class="navhover">About</a></li>
-      <li><a href="index.html#itineraries" class="navhover">Travel Itineraries</a></li>
       <li><a href="F&Q.html" class="navhover">FAQ</a></li>
       <li><a href="./contact.html" class="navhover">Contact</a></li>
       <li><a href="index.html#reviews" class="navhover">Reviews</a></li>
@@ -774,79 +804,104 @@
     </script>
 
 <footer id="footer">
-  <div class="footer-container">
-    <!-- About Us Section -->
-    <div class="footer-column">
-      <h3>About Us</h3>
-      <p>Discover and plan affordable trips with BuddyTrail's travel companion tools.</p>
-    </div>
-
-    <!-- Quick Links Section -->
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="faq.html" class="faq-link">FAQs</a></li>
-        <li><a href="servicespage.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="welcome.html">Testimonials</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="./contributor/Contributors.html" id="ourvisionlink">Our Contributors</a></li>
-      </ul>
-    </div>
-
-    <!-- Legal Links Section -->
-    <div class="footer-column">
-      <h3>Legal Links</h3>
-      <ul>
-        <li><a href="terms_of_service.html">Terms of Service</a></li>
-        <li><a href="privacypolicy.html">Privacy Policy</a></li>
-        <li><a href="copyright.html">Copyright Notice</a></li>
-        <li><a href="disclaimer.html">Disclaimer</a></li>
-        <li><a href="cookie_policy.html">Cookie Policy</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Us Section -->
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>Office: 123 Fake Street, Near XYZ Mall, Sample City, Fake State, PIN 12345, India</p>
-      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-      <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-    </div>
-
-    <!-- Follow Us Section -->
-    <div class="footer-column">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="https://discord.com/invite/priyaghosal" target="_blank"><i class="fab fa-discord"></i></a>
-        <a href="https://x.com/https://twitter.com/PriyaGhosa39968" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://github.com/PriyaGhosal/BuddyTrail" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/priya-ghosal-785771286/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div class="footer-container">
+      <!-- About Us Section -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>Discover and plan affordable trips with Voyager's travel companion tools.</p>
+        <!-- Newsletter Form Section -->
+      <style>
+        .footer-column.newsletter {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #newsletter-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #email {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            width: 40%;
+            padding: 6px;
+            font-size: 14px;
+        }
+        #subscription-message {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+      <div class="footer-column newsletter" id="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="newsletter-form">
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscription-message"></p>
+      </div>
+      </div>
+  
+      <!-- Quick Links Section -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html" class="faq-link">FAQs</a></li>
+          <li><a href="servicespage.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Legal Links Section -->
+      <div class="footer-column">
+        <h3>Legal Links</h3>
+        <ul>
+          <li><a href="terms_of_service.html">Terms of Service</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="copyright.html">Copyright Notice</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="cookie_policy.html">Cookie Policy</a></li>
+  
+  
+  
+        </ul>
+      </div>
+  
+      <!-- Contact Us Section -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        <!-- Follow Us Section -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://discord.com/invite/priyaghosal" target="_blank"><i class="fab fa-discord"></i></a>
+          <a href="https://x.com/https://twitter.com/PriyaGhosa39968" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/PriyaGhosal/BuddyTrail" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/priya-ghosal-785771286/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
       </div>
     </div>
-
-    <!-- Newsletter Form Section -->
-    <div class="footer-column newsletter" id="newsletter">
-      <h3>Subscribe to Our Newsletter</h3>
-      <form id="newsletter-form">
-        <input type="email" id="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <p id="subscription-message"></p>
+  
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <p class="copyright-b">&copy; 2025 Voyager. All rights reserved.</p>
     </div>
-  </div>
-
-  <hr>
-  <p class="copyright">© 2024 BuddyTrail | All Rights Reserved</p>
-</footer>
+  </footer>
 
     </div>
   
     <!-- Footer Bottom Section -->
     <div class="footer-bottom">
-      <p class="copyright-b">&copy; 2024 BuddyTrail. All rights reserved.</p>
+      <p class="copyright-b">&copy; 2025 Voyager. All rights reserved.</p>
     </div>
   </footer>
     <div class="gtranslate_wrapper"></div>

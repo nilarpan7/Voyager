@@ -55,10 +55,10 @@ nav ul {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 0;
+  padding: 0 2rem;
 }
 
 .hi ul li a {
@@ -247,8 +247,9 @@ h5 {
 }
 
 #logo-web {
-  height: 50px;
-  width: 70px;
+  height:60px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 a {
@@ -322,18 +323,19 @@ a {
 /* Header Styles */
 .main-head {
   position: fixed;
-  width: 98%;
-  top: 5px;
-  left: 1%;
-  right: 0;
-  z-index: 5;
-  padding: 17px 0;
-  background-color: #00000087; /* Initially black */
-  color: white;
-  display: flex;
-  justify-content: space-between; /* Adjusted to space-between for better layout */
-  align-items: center;
-  transition: background-color 0.3s ease, height 0.3s ease;
+    width: 98%;
+    top: 5px;
+    left: 1%;
+    right: 0;
+    z-index: 5;
+    padding: 17px;
+    background-color: #00000087;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3sease, height 0.3sease;
+    border-radius: 13px;
 }
 
 .main-head.shadow {
@@ -1351,7 +1353,7 @@ footer {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .social-icons .fa-x-twitter:hover {
-  color:whitesmoke;
+  color:black;
   transform: scale(1.1);
   transform: scale(1.2) translateY(-5px);
 }
