@@ -1,7 +1,7 @@
 {
-    "name": "BuddyTrail - Travel Agency",
-    "short_name": "BuddyTrail",
-    "description": "BuddyTrail is a travel agency website that helps you pick out your holiday vacation",
+    "name": "Voyager - Travel Agency",
+    "short_name": "Voyager",
+    "description": "Voyager is a travel agency website that helps you pick out your holiday vacation",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
